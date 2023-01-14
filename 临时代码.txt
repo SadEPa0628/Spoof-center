@@ -1,0 +1,24 @@
+.版本 2
+.支持库 dp1
+
+置剪辑板文本 (到文本 (加密数据 (到字节集 (“false”), “IUdgh#7D#PJ(9!g”, #DES算法)))
+.如果真 (到文本 (解密数据 (到字节集 (读入文件 (取运行目录 () ＋ “\need password.ini”)), “IUdgh#7D#PJ(9!g”, #DES算法)) ≠ 到文本 (加密数据 (到字节集 (“true”), “IUdgh#7D#PJ(9!g”, #DES算法)))
+    .如果真 (到文本 (解密数据 (到字节集 (读入文件 (取运行目录 () ＋ “\need password.ini”)), “IUdgh#7D#PJ(9!g”, #DES算法)) ≠ 到文本 (加密数据 (到字节集 (“false”), “IUdgh#7D#PJ(9!g”, #DES算法)))
+        信息框 (取运行目录 () ＋ “\need password.ini的配置不正确，重新安装或许能解决这个问题。”, 16, “错误”, )
+        结束 ()
+    .如果真结束
+
+.如果真结束
+.如果真 (到文本 (解密数据 (到字节集 (读入文件 (取运行目录 () ＋ “\need password.ini”)), “IUdgh#7D#PJ(9!g”, #DES算法)) ＝ 到文本 (加密数据 (到字节集 (“true”), “IUdgh#7D#PJ(9!g”, #DES算法)))
+    载入 (当前操作需要您输入安全密码, , 真)
+.如果真结束
+.如果真 (到文本 (解密数据 (到字节集 (读入文件 (取运行目录 () ＋ “\need password.ini”)), “IUdgh#7D#PJ(9!g”, #DES算法)) ＝ 到文本 (加密数据 (到字节集 (“false”), “IUdgh#7D#PJ(9!g”, #DES算法)))
+
+.如果真结束
+
+
+.版本 2
+.支持库 dp1
+
+写配置项 (取运行目录 () ＋ “\config.ini”, “access control”, “password”, 到文本 (加密数据 (到字节集 (“2020821”), “dD2{lg&g_WMYge'”, #DES算法)))
+写配置项 (取运行目录 () ＋ “\config.ini”, “access control”, “use a password”, 到文本 (加密数据 (到字节集 (“no”), “dD2{lg&g_WMYge'”, #DES算法)))
