@@ -1,25 +1,25 @@
-# Spoof Central
+# 恶搞中心
 
-#### Introduction
-Files and material from the Center of Parody project
+#### 介绍
+恶搞中心项目的文件和素材
 
-#### Software Architecture
-Software architecture specification
+#### 软件架构
+软件架构说明
 
-No 😓......
+暂无😓……
 
-#### Installation tutorial
+#### 安装教程
 
-No 😓......
+暂无😓……
 
-#### Instructions for use
+#### 使用说明
 
-No 😓......
+暂无😓……
 
-#### Contribute by participating
+#### 参与贡献
 
-No 😓......
+暂无😓……
 
-#### special effect
+#### 特技
 
-No 😓......
+暂无😓……
