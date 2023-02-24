@@ -1,72 +1,25 @@
 ﻿<!DOCTYPE html>
+ <!-- 声明文档类型为 HTML5 -->
 <html>
+ <!-- 根元素，包含整个文档 -->
 <head>
-    <title>恶搞中心意见调查</title>
-    <style>
-        form {
-            margin: 20px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-        }
-
-        input[type="text"], textarea {
-            padding: 5px;
-            margin: 5px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-            width: 100%;
-            box-sizing: border-box;
-            font-size: 16px;
-        }
-
-        input[type="submit"] {
-            padding: 10px 20px;
-            margin-top: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 3px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-            input[type="submit"]:hover {
-                background-color: #3e8e41;
-            }
-
-        label {
-            display: block;
-            font-size: 18px;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        .required {
-            color: #888;
-            font-size: 14px;
-            margin-top: 5px;
-        }
-    </style>
+    <!-- 文档头部 -->
+    <meta charset="UTF-8"> <!-- 设置字符编码为 UTF-8 -->
+    <title>恶搞中心意见调查</title> <!-- 网页标题 -->
 </head>
 <body>
-    <h1>恶搞中心意见调查</h1>
-    <p>请填写以下信息以提交您的建议：</p>
+    <!-- 文档主体 -->
+    <h1>恶搞中心意见调查</h1> <!-- 页面标题 -->
+    <p>请提供您的建议和联系方式。我们会在收到您的反馈后尽快回复您。</p> <!-- 页面说明 -->
     <form action="mailto:sadepa0628@gmail.com" method="post" enctype="text/plain">
-        <label for="name">姓名：</label>
-        <input type="text" id="name" name="name" required>
-        <span class="required">(用于确认身份，必填)</span>
-
-        <label for="email">电子邮件地址：</label>
-        <input type="email" id="email" name="email">
-        <span class="required">(可选)</span>
-
-        <label for="suggestion">您的建议：</label>
-        <textarea id="suggestion" name="suggestion" rows="10" required></textarea>
-        <span class="required">(必填)</span>
-
-        <input type="submit" value="提交">
-    </form>
+        <!-- 表单开始，设置提交到指定的邮箱地址 -->
+        <label for="name">姓名 *</label> <!-- 显示标签，用于姓名输入框 -->
+        <input type="text" id="name" name="name" required><br><br> <!-- 姓名输入框，必填项 -->
+        <label for="email">电子邮件</label> <!-- 显示标签，用于电子邮件输入框 -->
+        <input type="email" id="email" name="email"><br><br> <!-- 电子邮件输入框，非必填项 -->
+        <label for="feedback">您的建议 *</label> <!-- 显示标签，用于建议输入框 -->
+        <textarea id="feedback" name="feedback" rows="10" cols="50" required></textarea><br><br> <!-- 建议输入框，必填项 -->
+        <input type="submit" value="提交"> <!-- 提交按钮 -->
+    </form> <!-- 表单结束 -->
 </body>
 </html>
