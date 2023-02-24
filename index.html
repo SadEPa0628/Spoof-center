@@ -1,65 +1,68 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>恶搞中心意见调查</title>
-    <style>
-        /* CSS 样式表 */
-        body {
-            font-family: Arial, sans-serif; /* 设置字体 */
-            background-color: #f2f2f2; /* 设置背景色 */
-        }
-
-        h1 {
-            text-align: center; /* 居中对齐标题 */
-            color: #333; /* 设置标题颜色 */
-        }
-
-        form {
-            margin: 0 auto; /* 水平居中表单 */
-            max-width: 500px; /* 设置表单最大宽度 */
-            background-color: #fff; /* 设置表单背景色 */
-            padding: 20px; /* 设置表单内边距 */
-            border-radius: 10px; /* 设置表单边框圆角 */
-            box-shadow: 0 0 10px #999; /* 设置表单阴影 */
-        }
-
-        label {
-            display: inline-block; /* 将标签设置为行内块元素 */
-            margin-bottom: 5px; /* 设置标签下方边距 */
-            font-weight: bold; /* 设置标签加粗 */
-            color: #555; /* 设置标签颜色 */
-        }
-
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%; /* 设置输入框宽度为 100% */
-            padding: 8px; /* 设置输入框内边距 */
-            border: 1px solid #ccc; /* 设置输入框边框 */
-            border-radius: 4px; /* 设置输入框边框圆角 */
-            box-sizing: border-box; /* 设置输入框盒模型为 border-box */
-            margin-bottom: 10px; /* 设置输入框下方边距 */
-        }
-
-        input[type="submit"] {
-            background-color: #4CAF50; /* 设置提交按钮背景色 */
-            color: #fff; /* 设置提交按钮文字颜色 */
-            padding: 12px 20px; /* 设置提交按钮内边距 */
-            border: none; /* 去掉提交按钮边框 */
-            border-radius: 4px; /* 设置提交按钮边框圆角 */
-            cursor: pointer; /* 设置提交按钮鼠标悬停样式 */
-            font-size: 16px; /* 设置提交按钮字体大小 */
-        }
-
-            input[type="submit"]:hover {
-                background-color: #45a049; /* 设置提交按钮鼠标悬停背景色 */
-            }
-    </style>
+  <title>恶搞中心意见调查</title>
+  <style>
+    /* 样式定义 */
+    form {
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    input[type="text"], textarea {
+      padding: 5px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+    input[type="submit"] {
+      padding: 10px 20px;
+      margin-top: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+    label {
+      display: block;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .required {
+      color: #888;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  </style>
 </head>
 <body>
-    <h1>恶搞中心意见调查</h1>
-    <p>请提供您的建议和联系方式。我们会在收到您的反馈后尽快回复您。</p>
-    <form action="mailto:sadepa0628@gmail.com" method="post" enctype="text/plain">
-        <label for="name">姓名 *</label>
-        <input type="text" id="name" name
+  <h1>恶搞中心意见调查</h1>
+  <p>请填写以下信息以提交您的建议：</p>
+  <form action="mailto:sadepa0628@gmail.com" method="post" enctype="text/plain">
+    <label for="name">姓名：</label>
+    <input type="text" id="name" name="name" required>
+    <span class="required">（用于确认身份，必填）</span>
+
+    <label for="email">电子邮件地址：</label>
+    <input type="email" id="email" name="email">
+    <span class="required">（可选）</span>
+
+    <label for="suggestion">您的建议：</label>
+    <textarea id="suggestion" name="suggestion" rows="10" required></textarea>
+    <span class="required">（必填）</span>
+
+    <input type="submit" value="提交">
+  </form>
+</body>
+</html>
