@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>恶搞中心意见调查</title>
+    <style>
+        form {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        input[type="text"], textarea {
+            padding: 5px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+            input[type="submit"]:hover {
+                background-color: #3e8e41;
+            }
+
+        label {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .required {
+            color: #888;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>恶搞中心意见调查</h1>
+    <p>请填写以下信息以提交您的建议：</p>
+    <form action="mailto:sadepa0628@gmail.com" method="post" enctype="text/plain">
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" required>
+        <span class="required">(用于确认身份，必填)</span>
+
+        <label for="email">电子邮件地址：</label>
+        <input type="email" id="email" name="email">
+        <span class="required">(可选)</span>
+
+        <label for="suggestion">您的建议：</label>
+        <textarea id="suggestion" name="suggestion" rows="10" required></textarea>
+        <span class="required">(必填)</span>
+
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
